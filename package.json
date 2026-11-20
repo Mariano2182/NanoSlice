@@ -1,0 +1,23 @@
+{
+  "name": "nano-slice",
+  "version": "0.7.1",
+  "description": "Laminador FDM local para navegador y celular",
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node tests/gcode.mjs && node tests/geometry.mjs && node tests/recommend.mjs && node tests/settings.mjs && node tests/machine.mjs && node tests/filaments.mjs && node tests/update.mjs",
+    "start": "node scripts/serve.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "AGPL-3.0-or-later",
+  "type": "module",
+  "dependencies": {
+    "cura-wasm": "^1.5.2",
+    "cura-wasm-definitions": "^1.5.1",
+    "esbuild": "^0.28.2",
+    "three": "^0.186.1"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
